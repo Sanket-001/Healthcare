@@ -2,14 +2,18 @@
 
 <div class="container">
   <div class="jumbotron centered">
-    <i class="fas fa-key fa-6x"></i>
-    <h1 class="display-3">Secrets</h1>
-    <p class="secret-text">Don't keep your secrets, share them anonymously!</p>
+    <i class="fas fa-hospital-user"></i>
+    <h2 class="display-3">HEALTH DATA EMPOWERMENT</h2>
+    <p class="secret-text">Your Data is in safe hands.</p>
 
     <form action="/submit" method="POST">
-
       <div class="form-group">
-        <input type="text" class="form-control text-center" name="secret" placeholder="What's your secret?">
+      <input type="text" class="form-control text-center" name="secret" placeholder="Document ID">
+      </div>
+      <div class="form-group">
+        <label for="img">UPLOAD Document:</label>
+        <input type="file" id="img" name="img" accept="image/*">
+        <input type="submit">
       </div>
       <button type="submit" class="btn btn-dark">Submit</button>
     </form>
